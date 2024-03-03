@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'khula-Regular';
 }
 
 h1,
@@ -24,4 +25,9 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a,
+button {
+    font-family: inherit;
 }
