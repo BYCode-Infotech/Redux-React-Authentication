@@ -1,0 +1,15 @@
+@import '../../styles/index.scss';
+
+.header-main {
+    background-color: black;
+
+    .container {
+        Header {
+            .logo {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
