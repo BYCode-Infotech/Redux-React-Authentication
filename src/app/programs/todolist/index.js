@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './todolist.scss'
+import { MdDelete } from "react-icons/md";
 
 export default function ToDoList() {
     const [tasks, setTasks] = useState([]);
@@ -41,7 +42,7 @@ export default function ToDoList() {
                         {tasks.map(task => (
                             <li key={task.id} className={task.completed ? 'completed' : ''}>
                                 <span onClick={() => toggleTask(task.id)}>{task.text}</span>
-                                <button onClick={() => removeTask(task.id)}>Remove</button>
+                                <button onClick={() => removeTask(task.id)}><MdDelete className='delete-icon' /></button>
                             </li>
                         ))}
                     </ul>

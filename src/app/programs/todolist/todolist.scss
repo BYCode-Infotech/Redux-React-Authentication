@@ -2,14 +2,14 @@
 
 .todo {
     padding-top: 100px;
-    background-color: var(--theme-primary-color);
-    min-height: 100vh;
 
     .todo-container {
+        background-color: var(--theme-primary-color);
         max-width: 500px;
         margin: 0 auto;
         padding: 30px;
         border: 6px solid var(--theme-border-black-color);
+        border-radius: 10px;
 
         h1 {
             font-family: 'khula-Bold';
@@ -75,12 +75,18 @@
                 }
 
                 button {
+                    display: flex;
+                    align-items: center;
                     cursor: pointer;
-                    background-color: var(--theme-button-red-bg-color);
-                    color: var(--theme-button-white-text-color);
+                    background-color: rgb(255, 208, 208);
                     border: none;
                     padding: 5px 10px;
                     border-radius: 8px;
+
+                    .delete-icon {
+                        color: var(--theme-button-red-bg-color);
+                        font-size: 20px;
+                    }
                 }
             }
         }
