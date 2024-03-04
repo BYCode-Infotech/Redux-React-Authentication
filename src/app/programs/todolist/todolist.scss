@@ -8,11 +8,13 @@
     .todo-container {
         max-width: 500px;
         margin: 0 auto;
+        padding: 30px;
+        border: 6px solid var(--theme-border-black-color);
 
         h1 {
             font-family: 'khula-Bold';
             text-align: center;
-            font-size: 50px;
+            font-size: 30px;
             font-weight: 900;
         }
 
