@@ -2,6 +2,7 @@ import React from 'react'
 import './header.scss'
 import logo from '../../assets/logo/logo.png'
 import { CgMenuRight } from "react-icons/cg";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -12,18 +13,21 @@ export default function Header() {
             <img src={logo} alt="logo-png" />
           </div>
           <div className="menu">
-            <div className="menu-items">
+            <Link to={"/home"} className="menu-items">
               <a href="HOME">Home</a>
-            </div>
-            <div className="menu-items">
+            </Link>
+            <Link to={"/services"} className="menu-items">
               <a href="SERVICES">Services</a>
-            </div>
-            <div className="menu-items">
+            </Link>
+            <Link to={"/our Company"} className="menu-items">
               <a href="COMPANY">Our Company</a>
-            </div>
-            <div className="menu-items">
+            </Link>
+            <Link to={"/hire-us"} className="menu-items">
               <a href="HIRE US">Hire us</a>
-            </div>
+            </Link>
+            <Link to={"/programs"} className="menu-items">
+              <a href="PROGRAMS">Programs</a>
+            </Link>
             <CgMenuRight className='menu-icon' />
           </div>
         </header>
