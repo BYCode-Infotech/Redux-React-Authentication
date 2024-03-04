@@ -1,0 +1,86 @@
+@import '../../../styles/index.scss';
+
+.todo {
+    padding-top: 100px;
+    background-color: var(--theme-primary-color);
+    min-height: 100vh;
+
+    .todo-container {
+        max-width: 500px;
+        margin: 0 auto;
+
+        h1 {
+            font-family: 'khula-Bold';
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+        }
+
+
+        .todo-form {
+            margin-bottom: 20px;
+
+            input {
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 10px;
+                border: 0px solid transparent;
+                font-size: 24px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .add-button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding: 8px 15px;
+                    background-color: var(--theme-button-darkBlue-bg-color);
+                    color: var(--theme-button-white-text-color);
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                border-radius: 10px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                margin-bottom: 10px;
+
+                &.completed {
+                    text-decoration: line-through;
+                }
+
+                button {
+                    cursor: pointer;
+                    background-color: var(--theme-button-red-bg-color);
+                    color: var(--theme-button-white-text-color);
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
