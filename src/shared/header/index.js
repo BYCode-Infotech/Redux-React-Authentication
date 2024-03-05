@@ -9,9 +9,9 @@ export default function Header() {
     <div className='header-main'>
       <div className="container">
         <header>
-          <div className="logo">
+          <Link to={'/home'} className="logo">
             <img src={logo} alt="logo-png" />
-          </div>
+          </Link>
           <div className="menu">
             <Link to={"/home"} className="menu-items">
               <a href="HOME">Home</a>
